@@ -1,9 +1,9 @@
-# TPGP
-Dexterous Grasping via Temporal Parametric Optimization and Contact Diffusion
+# TPNP
+Generating Dexterous Grasping Motion with Contact Latent Diffusion and Temporal Parametric Neural Pose Optimization
 
 # Dexterous Motion Dataset
 - The grasp motion dataset of the shadow hand is based on the object from the [ [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet.git) ]
--  The dataset is available for research purposes at  [ [TPGP-DexGrasp](https://onedrive.live.com/?id=991F1C6479E03435%21s1a592872606f490c926ed916a44dabb7&cid=991F1C6479E03435) ]
+-  The dataset is available for research purposes at  [ [TPNP-DexGrasp](https://onedrive.live.com/?id=991F1C6479E03435%21s1a592872606f490c926ed916a44dabb7&cid=991F1C6479E03435) ]
 # Citation
 ```
 @article{wang2022dexgraspnet,
