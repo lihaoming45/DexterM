@@ -1,6 +1,8 @@
 # TPNP
 Generating Dexterous Grasping Motion with Contact Latent Diffusion and Temporal Parametric Neural Pose Optimization
 
+Below you can see some generated results from GrabNet:
+![Grasp Motion](images/TPNPDataset_github.gif)
 # Dexterous Motion Dataset
 - The grasp motion dataset of the shadow hand is based on the object from the [ [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet.git) ]
 -  The dataset is available for research purposes at  [ [TPNP-DexGrasp](https://onedrive.live.com/?id=991F1C6479E03435%21s1a592872606f490c926ed916a44dabb7&cid=991F1C6479E03435) ]
@@ -23,6 +25,7 @@ TPNPDataset
 +-- ShadowHand
 |  +-- v1 # The first version of our Released dataset.
 |  |  +--core-bottle-1cf98e5b6fff5471c8724d5673a063a6.npy The filename denotes the object ID of the ShapeNet.
+|  |  +--core-jar-85b34acd44a557ae21072d05c97a5e0a.npy
 |  |  +-- ...
 |  +-- v2 # The second version of our Released dataset.
 
