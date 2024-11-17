@@ -2,9 +2,8 @@
 
 # Dexterous Motion Dataset
 - The grasp motion dataset of the shadow hand is based on the object from the [ [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet.git) ]
--  The dataset is available for research purposes at  [ [TPNP-DexGrasp](https://onedrive.live.com/?id=991F1C6479E03435%21s1a592872606f490c926ed916a44dabb7&cid=991F1C6479E03435) ]
+-  The dataset is available for research purposes at  [ [TPNP-DexGrasp](https://zjueducn-my.sharepoint.com/:f:/g/personal/haomingli_zju_edu_cn/Ek404Bg89xJDgx3AopmQ7ZIBIf3A30a6Exu0Ziz6VR1F_g?e=jV3bCW) ]
 - Our working file structure is as:
-
 ```bash
 TPNPDataset
 +-- HumanHand
