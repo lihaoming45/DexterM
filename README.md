@@ -20,8 +20,9 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 
 -  The dataset for dexterous multifigured robotic hands containing more than 8,000 objects and 1,300,000 trajectories, has three different versions.
    - **Version 1 (v1)**  contains optimized grasp trajectory sequences generated using the TPNP method, including
-      - - 1,152,000 trajectories based on the ShadowHand.
+      - 1,152,000 trajectories based on the ShadowHand.
       -  212,360 trajectories based on the MANO hand.
+      -  8152 object models
    - **Version 2 (v2)**  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.
    - **Version 3 (v3)**  uses large models (LLMs) for semantic annotation of trajectory samples, providing detailed descriptions of object categories, functional attributes, grasp directions, and contact areas. More details can be found in **semantic_label_detail.pdf** within the dataset folder.
   
