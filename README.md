@@ -1,6 +1,7 @@
 # TPNP: Generating Dexterous Grasping Motion with Contact Latent Diffusion and Temporal Parametric Neural Pose Optimization
 
 ## Project Page
+https://lihaoming45.github.io/tpnp/index.html
 
 ## Dataset Download
 To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: we hope to know the contact details of your academic supervisor. By sending the e-mail you accept the following terms and conditions.
