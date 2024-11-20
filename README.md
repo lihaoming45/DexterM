@@ -26,7 +26,7 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
    - **Version 2 (v2)**  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.
        - The annotation of whether it can be successfully executed in simulation.
    - **Version 3 (v3)**  uses large language models (LLMs) to provining semantic annotation of trajectory samples inclduing
-      - A long and short text description.
+      - A long text description.
       - Functional attributes.
       - Object categories.
       - Grasp directions
