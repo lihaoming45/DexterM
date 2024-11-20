@@ -4,25 +4,25 @@ This folder is for processing object models. For ShadowHand, the objects are bas
 For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization. 
 
 ### Download object meshes
-  #### Download object models from DexGraspNet
-   - Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
+  - #### Download object models from DexGraspNet
+    - - Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
    ```bash
    # ShapeNetCore
    python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
    ```
-   #### Download object models from Obman
-  - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
+   - #### Download object models from Obman
+     - - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
 
-   #### Download object models from ContactPose
-  - Following the guidance of the [ContactPose]([https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process](https://github.com/facebookresearch/ContactPose/blob/main/docs/doc.md#downloading-data)) Extraction to download the object mesh.
+   - #### Download object models from ContactPose
+     - - Following the guidance of the [ContactPose]([https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process](https://github.com/facebookresearch/ContactPose/blob/main/docs/doc.md#downloading-data)) Extraction to download the object mesh.
   ```bash
   $ python scripts/download_data.py --type 3Dmodels
   $ python scripts/download_data.py --type markers
   ```
 
-   #### Download object models from GRAB
-  - Following the guidance of [GRAB website](https://grab.is.tue.mpg.de/) to download the object models.
-  - Using the following command from [GRAB repository](https://github.com/otaheri/GRAB)  to extract the ZIP files
+   - #### Download object models from GRAB
+     - - Following the guidance of [GRAB website](https://grab.is.tue.mpg.de/) to download the object models.
+     - - Using the following command from [GRAB repository](https://github.com/otaheri/GRAB)  to extract the ZIP files
      ```Shell
     python grab/unzip_grab.py   --grab-path $PATH_TO_FOLDER_WITH_ZIP_FILES \
                                 --extract-path $PATH_TO_EXTRACT_GRAB_DATASET_TO
