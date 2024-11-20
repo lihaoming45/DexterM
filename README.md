@@ -70,7 +70,7 @@ ObjectModels
   - trimesh
   - [secenepic](https://microsoft.github.io/scenepic/python/index.html)
   - [manotorch](https://github.com/lixiny/manotorch.git)
-  - 
+    
 - #### Visualizing the hand and object meshes for each frame
 
     To visualize and grasp trajectory, run the *vis/visualize_html.py*
@@ -79,7 +79,6 @@ ObjectModels
     python vis/visualize_html.py --data-path $TPNP_DATASET_PATH \
                                       --model-path $MANO_MODEL_FOLDER
     ```
-
 
 Below you can see some generated results from the proposed TPNP:
 ![Grasp Motion](images/TPNPDataset_github.gif)
