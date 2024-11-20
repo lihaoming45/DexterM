@@ -11,7 +11,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
    python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
    ```
    - #### Download object models from Obman
-     - - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
+      - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
 
    - #### Download object models from ContactPose
      - - Following the guidance of the [ContactPose]([https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process](https://github.com/facebookresearch/ContactPose/blob/main/docs/doc.md#downloading-data)) Extraction to download the object mesh.
