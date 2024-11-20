@@ -15,8 +15,10 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 - Modification, resale, or redistribution of the dataset is not allowed without prior written consent.
 - Proper citation of the associated paper is required when the dataset or its concepts are used.
 
-# Dexterous Motion Dataset
--  The dataset is available for research purposes at  [ [TPNP-DexGrasp](xxx) ]
+# Dataset Description
+-  The dataset for dexterous multifigured robotic hands consisting of 8,000 objects and 1,000,000 trajectories, has three different versions.
+-  - Version 1
+-  
 - Our working file structure is as:
 ```bash
 TPNPDataset
