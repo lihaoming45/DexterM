@@ -45,13 +45,26 @@ TPNPDataset
 |  +-- v2 # The second version of our Released dataset.
 |  +-- v3 # The third version of our Released dataset.
 
+
 ```
 # Quick Visualization Example
-- Requirements
+- #### Requirements
   This visualization process has the following requirements:
   - Numpy
   - Python >=3.6.0
+  - torch>=1.10.1
+  - trimesh
+  - [secenepic](https://microsoft.github.io/scenepic/python/index.html)
+  - [manotorch](https://github.com/lixiny/manotorch.git)
+  - 
+- #### Visualizing the hand and object meshes for each frame
 
+    To visualize and grasp trajectory, run the *vis/visualize_html.py*
+    
+    ```Shell
+    python vis/visualize_html.py --data-path $TPNP_DATASET_PATH \
+                                      --model-path $MANO_MODEL_FOLDER
+    ```
 
 
 Below you can see some generated results from the proposed TPNP:
