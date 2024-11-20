@@ -1,15 +1,22 @@
-# Asset process
+# Asset Process
 
 This folder is for processing object models. For ShadowHand, the objects are based on the DexGraspNet. For the MANO hand, the objects are based on Obman, GRAB, and ContactPose.
 For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization. 
 
-### Download object meshes
+## Download Object Meshes
   - #### Download object models from DexGraspNet
+    - -  Downloading the sources of object models for the following websites
+    - -  [ShapeNetCore](https://shapenet.org/)
+    - -  [ShapeNetSem](https://shapenet.org/)
+    - -  [Mujoco](https://github.com/kevinzakka/mujoco_scanned_objects)
+    - -  [DDG](https://gamma.umd.edu/researchdirections/grasping/differentiable_grasp_planner)(Deep Differentiable Grasp)
+
     - Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
        ```bash
        # ShapeNetCore
        python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
        ```
+      
    - #### Download object models from Obman
       - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
 
@@ -30,7 +37,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
         ```
 
 
-### MeshToSDF
+## MeshToSDF
 After downloaded the object mesh you can run the following command to calculate the object sdf.
 - The packages need to be installed
 - - trimesh
@@ -65,32 +72,8 @@ Below are sources of our object datasets:
 - [Mujoco](https://github.com/kevinzakka/mujoco_scanned_objects)
 - [DDG](https://gamma.umd.edu/researchdirections/grasping/differentiable_grasp_planner)(Deep Differentiable Grasp)
 
-### Extraction
 
-```bash
-# ShapeNetCore
-python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
-# ShapeNetSem
-python extract.py --src data/ShapeNetSem/models --dst data/raw_models --set sem --meta data/ShapeNetSem/metadata.csv
-# Mujoco
-python extract.py --src data/mujoco_scanned_objects/models --dst data/raw_models --set mujoco
-# DDG
-python extract.py --src data/Grasp_Dataset/good_shapes --dst data/raw_models --set ddg
-```
 
-### Manifold
-
-```bash
-python manifold.py --src data/raw_models --dst data/manifolds --manifold_path ../thirdparty/ManifoldPlus/build/manifold
-```
-
-This generates `run.sh`. Then run it with:
-
-```bash
-bash run.sh
-# or poolrun.py runs it in multiprocess
-python poolrun.py -p 32
-```
 
 ### Normalization
 
