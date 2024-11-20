@@ -1,8 +1,21 @@
 # TPNP: Generating Dexterous Grasping Motion with Contact Latent Diffusion and Temporal Parametric Neural Pose Optimization
 
+## Project Page
+
+## Dataset Download
+To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: we hope to know the contact details of your academic supervisor. By sending the e-mail you accept the following terms and conditions.
+
+### Terms and Conditions
+When downloading and utilizing the mmBody dataset, you are required to carefully review and adhere to the following terms and conditions. By proceeding with the download and usage, you acknowledge that you have read, understood, and agreed to these terms. Any breach of this agreement will result in the immediate termination of your rights under this license. The dataset is developed by the State Key Laboratory of Industrial Control Technology at Zhejiang University, which retains all copyright and patent rights.
+
+#### Terms of Use
+- The dataset is strictly limited to non-commercial academic research and educational purposes.
+- Any other applications, including but not limited to integration into commercial products, use in commercial services, or further development of commercial projects, are strictly prohibited.
+- Modification, resale, or redistribution of the dataset is not allowed without prior written consent.
+- Proper citation of the associated paper is required when the dataset or its concepts are used.
+
 # Dexterous Motion Dataset
-- The grasp motion dataset of the shadow hand is based on the object from the [ [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet.git) ]
--  The dataset is available for research purposes at  [ [TPNP-DexGrasp](https://zjueducn-my.sharepoint.com/:f:/g/personal/haomingli_zju_edu_cn/Ek404Bg89xJDgx3AopmQ7ZIBIf3A30a6Exu0Ziz6VR1F_g?e=jV3bCW) ]
+-  The dataset is available for research purposes at  [ [TPNP-DexGrasp](xxx) ]
 - Our working file structure is as:
 ```bash
 TPNPDataset
