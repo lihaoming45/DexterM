@@ -46,7 +46,14 @@ TPNPDataset
 |  +-- v3 # The third version of our Released dataset.
 
 ```
-# Visualization
+# Quick Visualization Example
+- Requirements
+  This visualization process has the following requirements:
+  - Numpy
+  - Python >=3.6.0
+
+
+
 Below you can see some generated results from the proposed TPNP:
 ![Grasp Motion](images/TPNPDataset_github.gif)
 
