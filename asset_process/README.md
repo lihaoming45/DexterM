@@ -12,10 +12,16 @@ For each object we filer out non-manifolds and models of small volumes, and calc
     - -  [DDG](https://gamma.umd.edu/researchdirections/grasping/differentiable_grasp_planner)(Deep Differentiable Grasp)
 
     - Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
-       ```bash
-       # ShapeNetCore
-       python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
-       ```
+      ```bash
+      # ShapeNetCore
+      python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
+      # ShapeNetSem
+      python extract.py --src data/ShapeNetSem/models --dst data/raw_models --set sem --meta data/ShapeNetSem/metadata.csv
+      # Mujoco
+      python extract.py --src data/mujoco_scanned_objects/models --dst data/raw_models --set mujoco
+      # DDG
+      python extract.py --src data/Grasp_Dataset/good_shapes --dst data/raw_models --set ddg
+      ```
       
    - #### Download object models from Obman
       - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
