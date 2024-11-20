@@ -67,7 +67,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
 
 - The structure of the final object dataset for shadow hand is:
 ```bash
-meshdata
+ShadowHand
 +-- source(-category)-code0
 |  +-- coacd
 |  |  +-- coacd.urdf
@@ -79,7 +79,7 @@ meshdata
 ```
 - The structure of the final object dataset for human hand is:
 ```bash
-meshdata
+HumanHand
 +-- Obman
 |  +-- source(-category)-code0
 |  |  +-- source(-category)-code0-scale.obj
@@ -87,14 +87,12 @@ meshdata
 |  ...
 +-- source(-category)-code1
 ...
-
 +-- ContactPose
 |  +-- object_name
 |  |  +-- object_name.obj
 |  |  +-- object_name.sdf
 |  ...
 ...
-
 +-- GRAB
 |  +-- object_name
 |  |  +-- object_name.obj
