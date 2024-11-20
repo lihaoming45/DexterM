@@ -17,11 +17,10 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 
 # Dataset Description
 -  The dataset for dexterous multifigured robotic hands consisting of 8,000 objects and 1,000,000 trajectories, has three different versions.
-   - Version 1 (v1)  contains optimized grasp trajectory sequences generated using the TPNP method, including 115,200 trajectories based on the ShadowHand and 212,360 trajectories based on the MANO hand.
+   - Version 1 (v1)  contains optimized grasp trajectory sequences generated using the TPNP method, including 1,152,000 trajectories based on the ShadowHand and 212,360 trajectories based on the MANO hand.
    - Version 2 (v2)  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.
    - Version 3 (v3)  uses large models (LLMs) for semantic annotation of trajectory samples, providing detailed descriptions of object categories, functional attributes, grasp directions, and contact areas. More details can be found in "semantic_label_detail.pdf" within the dataset folder.
-
--  
+  
 - Our working file structure is as:
 ```bash
 TPNPDataset
@@ -36,6 +35,7 @@ TPNPDataset
 |  |  +-- ...
 
 |  +-- v2 # The second version of our Released dataset.
+|  +-- v3 # The third version of our Released dataset.
 
 +-- ShadowHand
 |  +-- v1 # The first version of our Released dataset.
@@ -43,6 +43,7 @@ TPNPDataset
 |  |  +--core-jar-85b34acd44a557ae21072d05c97a5e0a.npy
 |  |  +-- ...
 |  +-- v2 # The second version of our Released dataset.
+|  +-- v3 # The third version of our Released dataset.
 
 ```
 # Visualization
@@ -50,11 +51,13 @@ Below you can see some generated results from the proposed TPNP:
 ![Grasp Motion](images/TPNPDataset_github.gif)
 
 # Citation
+   This work can be considered a significant extension of our conference paper, Contact2Grasp: 3D grasp synthesis via hand-object contact constraint, published in the Thirty-Second International Joint Conference on Artificial Intelligence (IJCAI '23)
 ```
-@article{wang2022dexgraspnet,
-  title={DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation},
-  author={Wang, Ruicheng and Zhang, Jialiang and Chen, Jiayi and Xu, Yinzhen and Li, Puhao and Liu, Tengyu and Wang, He},
-  journal={arXiv preprint arXiv:2210.02697},
-  year={2022}
+@article{li2023contact2grasp,
+  title={Contact2grasp: 3d grasp synthesis via hand-object contact constraint},
+  author={Li, Haoming and Lin, Xinzhuo and Zhou, Yang and Li, Xiang and Huo, Yuchi and Chen, Jiming and Ye, Qi},
+  booktitle={Proceedings of the Thirty-Second International Joint Conference on Artificial Intelligence},
+  pages={1053--1061},
+  year={2023}
 }
 ```
