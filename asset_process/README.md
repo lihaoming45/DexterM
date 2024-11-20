@@ -14,11 +14,12 @@ For each object we filer out non-manifolds and models of small volumes, and calc
       - Following the guidance of the [Obman](https://hassony2.github.io/obman) website to download the object mesh.
 
    - #### Download object models from ContactPose
-    - Following the guidance of the [ContactPose](https://github.com/facebookresearch/ContactPose/blob/main/docs/doc.md#downloading-data) Extraction to download the object mesh.
-      ```bash
-      $ python scripts/download_data.py --type 3Dmodels
-      $ python scripts/download_data.py --type markers
-      ```
+      - Following the guidance of the [ContactPose](https://github.com/facebookresearch/ContactPose/blob/main/docs/doc.md#downloading-data) to download the object mesh.
+        
+        ```bash
+        $ python scripts/download_data.py --type 3Dmodels
+        $ python scripts/download_data.py --type markers
+        ```
 
    - #### Download object models from GRAB
      -  Following the guidance of [GRAB website](https://grab.is.tue.mpg.de/) to download the object models.
