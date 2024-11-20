@@ -60,6 +60,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
 - Then run the following command to calculate the object sdf.  
     ```bash
     python ./mesh_to_sdf.py --obj-dataset-path $DATASET_PATH \
+                            --dataset-name  $DATASET_NAME 
     ```
 
 - The structure of the final object dataset for shadow hand is:
