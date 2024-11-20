@@ -43,66 +43,26 @@ For each object we filer out non-manifolds and models of small volumes, and calc
         ```
 
 
-## MeshToSDF
-After downloaded the object mesh you can run the following command to calculate the object sdf.
-- The packages need to be installed
-- - trimesh
+## Object Models Preprocessing
+- The following packages need to be installed
+    - - trimesh
+    - - [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf)
+    - - mcubes
+    - - hydra
+    - - numpy
 
-```bash
-python ./mesh_to_sdf.py --obj-dataset-path $GRAB_DATASET_PATH \
+- After downloading the object mesh, we recommend you to follow the pipeline of [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) to process these models, including 
+  - - Extraction: Organize models into a folder.
+  - - Manifold: Use ManifoldPlus to convert raw models into manifolds robustly.
+  - - Normalization: Adjust centers and sizes of models. Then filter out bad models.
+  - - Decomposition: Use CoACD to decompose models and export urdf files for later physical simulation.
 
-```
+- Then run the following command to calculate the object sdf.  
+    ```bash
+    python ./mesh_to_sdf.py --obj-dataset-path $DATASET_PATH \
+    ```
 
-Other dependencies are simple python packages.
-
-```bash
-pip install tqdm
-pip install trimesh
-pip install lxml
-pip install networkx
-```
-
-## Usage
-
-We process our object models as the following pipeline. If you have some object models and want to synthesize grasps, we recommand you to follow this pipeline to process these models too.
-
-- Extraction: Organize models into a folder.
-- Manifold: Use ManifoldPlus to convert raw models into manifolds robustly.
-- Normalization: Adjust centers and sizes of models. Then filter out bad models.
-- Decomposition: Use CoACD to decompose models and export urdf files for later physical simulation.
-
-Below are sources of our object datasets:
-
-- [ShapeNetCore](https://shapenet.org/)
-- [ShapeNetSem](https://shapenet.org/)
-- [Mujoco](https://github.com/kevinzakka/mujoco_scanned_objects)
-- [DDG](https://gamma.umd.edu/researchdirections/grasping/differentiable_grasp_planner)(Deep Differentiable Grasp)
-
-
-
-
-### Normalization
-
-```bash
-python normalize.py --src data/manifolds --dst data/normalized_models
-```
-
-### Decomposition
-
-```bash
-python decompose_list.py --src data/normalized_models --dst data/meshdata --coacd_path ../thirdparty/CoACD/build/main
-```
-
-Again this generates `run.sh`.
-
-```bash
-bash run.sh
-# or
-python poolrun.py -p 32
-```
-
-The structure of the final object dataset for shadow hand is:
-
+- The structure of the final object dataset for shadow hand is:
 ```bash
 meshdata
 +-- source(-category)-code0
@@ -110,9 +70,31 @@ meshdata
 |  |  +-- coacd.urdf
 |  |  +-- decomposed.obj
 |  |  +-- decomposed.sdf
-|  |  +-- coacd_convex_piece_0.obj
-|  |  +-- coacd_convex_piece_1.obj
 |  |  ...
 +-- source(-category)-code1
 ...
 ```
+- The structure of the final object dataset for human hand is:
+```bash
+meshdata
++-- Obman
+|  +-- source(-category)-code0
+|  |  +-- source(-category)-code0-scale.obj
+|  |  +-- source(-category)-code0-scale.sdf
+|  ...
++-- source(-category)-code1
+...
+
++-- ContactPose
+|  +-- object_name
+|  |  +-- object_name.obj
+|  |  +-- object_name.sdf
+|  ...
+
++-- GRAB
+|  +-- object_name
+|  |  +-- object_name.obj
+|  |  +-- object_name.sdf
+|  ...
+
+
