@@ -45,17 +45,17 @@ For each object we filer out non-manifolds and models of small volumes, and calc
 
 ## Object Models Preprocessing
 - The following packages need to be installed
-    - - trimesh
-    - - [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf)
-    - - mcubes
-    - - hydra
-    - - numpy
+    -  trimesh
+    -  [mesh_to_sdf](https://github.com/marian42/mesh_to_sdf)
+    -  mcubes
+    -  hydra
+    -  numpy
 
 - After downloading the object mesh, we recommend you to follow the pipeline of [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) to process these models, including 
-  - - Extraction: Organize models into a folder.
-  - - Manifold: Use ManifoldPlus to convert raw models into manifolds robustly.
-  - - Normalization: Adjust centers and sizes of models. Then filter out bad models.
-  - - Decomposition: Use CoACD to decompose models and export urdf files for later physical simulation.
+  -  Extraction: Organize models into a folder.
+  -  Manifold: Use ManifoldPlus to convert raw models into manifolds robustly.
+  -  Normalization: Adjust centers and sizes of models. Then filter out bad models.
+  -  Decomposition: Use CoACD to decompose models and export urdf files for later physical simulation.
 
 - Then run the following command to calculate the object sdf.  
     ```bash
