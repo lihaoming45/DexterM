@@ -1,7 +1,7 @@
 # Asset process
 
 This folder is for processing object models. For ShadowHand, the objects are based on the DexGraspNet. For the MANO hand, the objects are based on Obman, GRAB, and ContactPose.
-For each object we filer out non-manifolds and models of small volumes, and calculate the sign ditacne field (sdf) as the input of out TPNP optimization. 
+For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization. 
 
 ### Download object meshes
  - Download object models from DexGraspNet
@@ -10,14 +10,18 @@ For each object we filer out non-manifolds and models of small volumes, and calc
    # ShapeNetCore
    python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
    ```
+   - Download object models from ContactPose
+   - Download object models from GRAB
+
 
 
 ### MeshToSDF
-
-you can run the following command to calculate the object sdf.
+After downloaded the object mesh you can run the following command to calculate the object sdf.
+- The packages need to be installed
+- - trimesh
 
 ```bash
-python ./mesh_to_sdf.py --grab-path $GRAB_DATASET_PATH \
+python ./mesh_to_sdf.py --obj-dataset-path $GRAB_DATASET_PATH \
 
 ```
 
