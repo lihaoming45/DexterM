@@ -50,6 +50,8 @@ For each object we filer out non-manifolds and models of small volumes, and calc
     -  mcubes
     -  hydra
     -  numpy
+    -  [ManifoldPlus](https://github.com/hjwdzh/ManifoldPlus)
+    -  [CoACD](https://github.com/SarahWeiii/CoACD)
 
 - After downloading the object mesh, we recommend you to follow the pipeline of [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) to process these models, including 
   -  Extraction: Organize models into a folder.
