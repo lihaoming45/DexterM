@@ -4,7 +4,7 @@
 https://lihaoming45.github.io/tpnp/index.html
 
 ## Dataset Download
-To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: we hope to know the contact details of your academic supervisor. By sending the e-mail you accept the following terms and conditions.
+To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions.
 
 ### Terms and Conditions
 When downloading and utilizing the TPNP dataset, you are required to carefully review and adhere to the following terms and conditions. By proceeding with the download and usage, you acknowledge that you have read, understood, and agreed to these terms. Any breach of this agreement will result in the immediate termination of your rights under this license. The dataset is developed by the State Key Laboratory of Industrial Control Technology at Zhejiang University, which retains all copyright and patent rights.
@@ -17,7 +17,10 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 
 # Dataset Description
 -  The dataset for dexterous multifigured robotic hands consisting of 8,000 objects and 1,000,000 trajectories, has three different versions.
--  - Version 1
+   - Version 1 (v1)  contains optimized grasp trajectory sequences generated using the TPNP method, including 115,200 trajectories based on the ShadowHand and 212,360 trajectories based on the MANO hand.
+   - Version 2 (v2)  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.
+   - Version 3 (v3)  uses large models (LLMs) for semantic annotation of trajectory samples, providing detailed descriptions of object categories, functional attributes, grasp directions, and contact areas. More details can be found in "semantic_label_detail.pdf" within the dataset folder.
+
 -  
 - Our working file structure is as:
 ```bash
