@@ -1,7 +1,7 @@
 # Asset Process
 
 This folder is for processing object models. For ShadowHand, the objects are based on the DexGraspNet. For the MANO hand, the objects are based on Obman, GRAB, and ContactPose.
-For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization. 
+For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization.
 
 ## Download Object Meshes
   - #### Download object models from DexGraspNet
