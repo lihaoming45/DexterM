@@ -94,3 +94,4 @@ Below you can see some generated results from the proposed TPNP:
   year={2023}
 }
 ```
+We also kindly ask you to cite Wang et al. [DexGraspNet website](https://pku-epic.github.io/DexGraspNet/), Taheri et al. [GRAB website](https://grab.is.tue.mpg.de/), Hasson et al. [Obman website](https://www.di.ens.fr/willow/research/obman/data/) and Brahmbhatt et al.[ContactPose website](https://github.com/facebookresearch/ContactPose) whose object meshes are used for our TPNP dataset. 
