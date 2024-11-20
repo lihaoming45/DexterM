@@ -5,7 +5,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
 
 ### Download object meshes
   - #### Download object models from DexGraspNet
-    --- Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
+    - - Following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
    ```bash
    # ShapeNetCore
    python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
