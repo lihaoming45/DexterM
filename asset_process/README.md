@@ -59,7 +59,7 @@ For each object we filer out non-manifolds and models of small volumes, and calc
   -  Normalization: Adjust centers and sizes of models. Then filter out bad models.
   -  Decomposition: Use CoACD to decompose models and export urdf files for later physical simulation.
 
-- Then run the following command to calculate the object sdf.  
+- Then, running the following command to calculate the object sdf.  
     ```bash
     python ./mesh_to_sdf.py --obj-dataset-path $DATASET_PATH \
                             --dataset-name  $DATASET_NAME 
