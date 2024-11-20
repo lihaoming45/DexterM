@@ -28,8 +28,8 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 TPNPDataset
 +-- HumanHand
 |  +-- v1 # The first version of our Released dataset.
-|  |  +--04074963_f677657b2cd55f930d48ff455dd1223_0.2375 The filename denotes the object ID of the Obman and The decimal at the end of the file name indicates the scale of the object.
-|  |  +--04074963_f677657b2cd55f930d48ff455dd1223_0.125
+|  |  +--source(-category)-code0-scale The filename denotes the object ID of the Obman and The decimal at the end of the file name indicates the scale of the object.
+|  |  +--source(-category)-code1-scale
 |  |  |  +--p0.npy each .npy file store a grasp pose represented by MANO parameters
 |  |  |  +--p1.npy
 |  |  |  +--p2.npy
@@ -41,8 +41,8 @@ TPNPDataset
 
 +-- ShadowHand
 |  +-- v1 # The first version of our Released dataset.
-|  |  +--core-bottle-1cf98e5b6fff5471c8724d5673a063a6.npy The filename denotes the object ID of the ShapeNet.
-|  |  +--core-jar-85b34acd44a557ae21072d05c97a5e0a.npy
+|  |  +--source(-category)-code0.npy The filename denotes the object ID of the ShapeNet.
+|  |  +--source(-category)-code1.npy
 |  |  +-- ...
 |  +-- v2 # The second version of our Released dataset.
 |  +-- v3 # The third version of our Released dataset.
