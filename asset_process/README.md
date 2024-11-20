@@ -90,11 +90,13 @@ meshdata
 |  |  +-- object_name.obj
 |  |  +-- object_name.sdf
 |  ...
+...
 
 +-- GRAB
 |  +-- object_name
 |  |  +-- object_name.obj
 |  |  +-- object_name.sdf
 |  ...
+...
 
 
