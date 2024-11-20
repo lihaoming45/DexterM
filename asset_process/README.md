@@ -23,7 +23,8 @@ For each object we filer out non-manifolds and models of small volumes, and calc
    - #### Download object models from GRAB
      -  Following the guidance of [GRAB website](https://grab.is.tue.mpg.de/) to download the object models.
      -  Using the following command from [GRAB repository](https://github.com/otaheri/GRAB)  to extract the ZIP files
-     ```Shell
+  
+    ```Shell
     python grab/unzip_grab.py   --grab-path $PATH_TO_FOLDER_WITH_ZIP_FILES \
                                 --extract-path $PATH_TO_EXTRACT_GRAB_DATASET_TO
     ```
