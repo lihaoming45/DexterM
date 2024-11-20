@@ -4,8 +4,8 @@ This folder is for processing object models. For ShadowHand, the objects are bas
 For each object we filer out non-manifolds and models of small volumes, and calculate the **sign ditacne field (sdf)** as the input of out TPNP optimization. 
 
 ### Download object meshes
- - Download object models from DexGraspNet
-   -- following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
+  #### Download object models from DexGraspNet
+   - following the guidance of the [DexGraspNet](https://github.com/PKU-EPIC/DexGraspNet/tree/main/asset_process) Extraction to download the object mesh.
    ```bash
    # ShapeNetCore
    python extract.py --src data/ShapeNetCore.v2 --dst data/raw_models --set core # replace data root with yours
