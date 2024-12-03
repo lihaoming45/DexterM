@@ -20,7 +20,7 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 
 -  The dataset for dexterous multifigured robotic hands containing more than 8,000 objects and 1,364,360 trajectories, has three different versions.
    - **Version 1 (v1)**  contains optimized grasp trajectory sequences generated using the TPNP method, including:
-   - 
+   
    | **Shadow Hand** | **Mano Hand** | **Object Model** |
    | --- | --- | --- |
    | 1,152,000 | 212,360 | 8,152 |
