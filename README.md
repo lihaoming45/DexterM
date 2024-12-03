@@ -24,7 +24,7 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
       -  212,360 trajectories based on the MANO hand.
       -  8152 object models.
 
-   - **Version 2 (v2)**  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.The default setting can be found in[asset_process](./vis/isaacgym_vis). For each crawl sequence, we've added the following information:
+   - **Version 2 (v2)**  enhances and filters the trajectory data from Version 1 using [IsaacGym](https://github.com/isaac-sim/IsaacGymEnvs). Specifically, data augmentation is performed in the simulation environment by applying rotational transformations around the object's center. Then, the grasp sequences from Version 1 are simulated and filtered using the Isaac simulation environment, eliminating samples where the grasp attempts failed.The default setting can be found in[vis/isaac_test](./vis/isaac_test). For each crawl sequence, we've added the following information:
        - the annotation of whether it can be successfully executed in simulation.
        - the rotation matrix for the object model.
    - **Version 3 (v3)**  uses large language models (LLMs) to provining semantic annotation of trajectory samples inclduing
