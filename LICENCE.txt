@@ -1,0 +1,4 @@
+
+The TPNP dataset is available for the academic purpose only. Any researcher who uses the VTDexManip dataset should obey the licence as below:
+
+All of the TPNP Dataset are published under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License (https://creativecommons.org/licenses/by-nc-sa/4.0/). This means that you must attribute the work in the manner specified by the authors, you may not use this work for commercial purposes and if you alter, transform, or build upon this work, you may distribute the resulting work only under the same license.
