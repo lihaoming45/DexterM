@@ -1,9 +1,8 @@
-# TPNP: Generating Dexterous Grasping Motion with Contact Latent Diffusion and Temporal Parametric Neural Pose Optimization
+# Dexter1M: A Million Dexterous Grasping Motion with Natural Smooth Poses
+The dataset has been released, including the grasping motion sequences of Shadow robot hands and mano hand for more than 8,000 objects. 
+In the early version, we named **Version 1** we randomly generated grasping trajectories in arbitrary directions for each object, ensuring no hand-object collisions during the grasping process while maintaining the naturalness and smoothness of hand postures. For each object, approximately 150–200 grasping trajectories were ultimately generated. Subsequently, we leveraged the Isaac Gym simulation environment to augment the data and filter out successful grasping trajectories, leading to the release of** Version 2**. Finally, using a large language model (LLM), we generated semantic annotations for different grasping trajectories based on multi-view rendered images of hand-object interactions, culminating in the release of **Version 3**.
 
-## Project Page
-https://lihaoming45.github.io/tpnp/index.html
-
-## Dataset Download
+## Download
 To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions.
 
 ### Terms and Conditions
@@ -35,9 +34,10 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
       - Contact areas.
    
 
+## Datas File Structure
 - Our working file structure is as:
 ```bash
-TPNPDataset
+Dexter1M Dataset
 +-- HumanHand
 |  +-- v1 # The first version of our Released dataset.
 |  |  +--source(-category)-code0-scale The filename denotes the object ID of the Obman and The decimal at the end of the file name indicates the scale of the object.
@@ -82,7 +82,7 @@ ObjectModels
                                       --model-path $MANO_MODEL_FOLDER
     ```
 
-Below you can see some generated results from the proposed TPNP:
+Below you can see some generated results from the Dexter1M:
 ![Grasp Motion](images/TPNPDataset_github.gif)
 
 # Citation
