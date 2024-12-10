@@ -2,13 +2,13 @@
 The dataset has been released, including the grasping motion sequences of Shadow robot hands and mano hand for more than 8,000 objects. 
 In **Version 1**, we randomly generated 150–200 grasping trajectories per object in arbitrary directions, ensuring collision-free interactions while maintaining natural and smooth hand postures. For each object, approximately 150–200 grasping trajectories were ultimately generated. Subsequently, we leveraged the Isaac Gym simulation environment to augment the data and filter out successful grasping trajectories, leading to the release of **Version 2**. Finally, using a large language model (LLM), we generated semantic annotations for different grasping trajectories based on multi-view rendered images of hand-object interactions, culminating in the release of **Version 3**.
 
-## Download
+# Download
 To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions.
 
-### Terms and Conditions
+## Terms and Conditions
 When downloading and utilizing the TPNP dataset, you are required to carefully review and adhere to the following terms and conditions. By proceeding with the download and usage, you acknowledge that you have read, understood, and agreed to these terms. Any breach of this agreement will result in the immediate termination of your rights under this license. The dataset is developed by the State Key Laboratory of Industrial Control Technology at Zhejiang University, which retains all copyright and patent rights.
 
-#### Terms of Use
+### Terms of Use
 - The dataset is strictly limited to non-commercial academic research and educational purposes.
 - Any other applications, including but not limited to integration into commercial products, use in commercial services, or further development of commercial projects, are strictly prohibited.
 - Modification, resale, or redistribution of the dataset is not allowed without prior written consent.
