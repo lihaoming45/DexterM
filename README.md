@@ -7,7 +7,7 @@ To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) includi
 
 For object models, we offer two access options：
 - Asset processing for **object models**. See folder [asset_process](./asset_process).
--  directly downloading from **"ObjectMeshes"** folder in the dataset link, but please cite the relevant references[#Citation].
+-  directly downloading from **"ObjectMeshes"** folder in the dataset link, but please cite the relevant references[# Citation].
 
 
 ## Terms and Conditions
