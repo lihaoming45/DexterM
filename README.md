@@ -42,6 +42,17 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 - Our working file structure is as:
 ```bash
 Dexter1M Dataset
+ObjectMeshes
++-- meshdata_mano
++-- meshdata_shadow
+
++-- ShadowHand
+|  +-- v1 # The first version of our Released dataset.
+|  |  +--source(-category)-code0.npy The filename denotes the object ID of the ShapeNet.
+|  |  +--source(-category)-code1.npy
+|  |  +-- ...
+|  +-- v2 # The second version of our Released dataset.
+|  +-- v3 # The third version of our Released dataset.
 +-- HumanHand
 |  +-- v1 # The first version of our Released dataset.
 |  |  +--source(-category)-code0-scale The filename denotes the object ID of the Obman and The decimal at the end of the file name indicates the scale of the object.
@@ -54,18 +65,6 @@ Dexter1M Dataset
 
 |  +-- v2 # The second version of our Released dataset.
 |  +-- v3 # The third version of our Released dataset.
-
-+-- ShadowHand
-|  +-- v1 # The first version of our Released dataset.
-|  |  +--source(-category)-code0.npy The filename denotes the object ID of the ShapeNet.
-|  |  +--source(-category)-code1.npy
-|  |  +-- ...
-|  +-- v2 # The second version of our Released dataset.
-|  +-- v3 # The third version of our Released dataset.
-
-ObjectModels
-+-- HumanHand
-+-- ShadowHand
 ```
 # Quick Visualization Example
 - #### Requirements
