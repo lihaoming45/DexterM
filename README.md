@@ -3,7 +3,12 @@ The dataset has been released, including the grasping motion sequences of Shadow
 In **Version 1**, we randomly generated 150–200 grasping trajectories per object in arbitrary directions, ensuring collision-free interactions while maintaining natural and smooth hand postures. For each object, approximately 150–200 grasping trajectories were ultimately generated. Subsequently, we leveraged the Isaac Gym simulation environment to augment the data and filter out successful grasping trajectories, leading to the release of **Version 2**. Finally, using a large language model (LLM), we generated semantic annotations for different grasping trajectories based on multi-view rendered images of hand-object interactions, culminating in the release of **Version 3**.
 
 # Download
-To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions.
+To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions. 
+
+For object models, we offer two access options：
+- Asset processing for **object models**. See folder [asset_process](./asset_process).
+-  directly downloading from **"ObjectMeshes"** folder in the dataset link, but please cite the relevant references[#Citation].
+
 
 ## Terms and Conditions
 When downloading and utilizing the TPNP dataset, you are required to carefully review and adhere to the following terms and conditions. By proceeding with the download and usage, you acknowledge that you have read, understood, and agreed to these terms. Any breach of this agreement will result in the immediate termination of your rights under this license. The dataset is developed by the State Key Laboratory of Industrial Control Technology at Zhejiang University, which retains all copyright and patent rights.
@@ -15,7 +20,6 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 - Proper citation of the associated paper is required when the dataset or its concepts are used.
 
 # Dataset Description
-- Asset processing for **object models**. See folder [asset_process](./asset_process).
 
 -  The dataset for dexterous multifigured robotic hands containing more than 8,000 objects and 1,364,360 trajectories, has three different versions.
    - **Version 1 (v1)**  contains optimized grasp trajectory sequences generated using the TPNP method, including:
