@@ -1,0 +1,101 @@
+graphics_device_id: 0
+object_code: 'core-cellphone-ff9e8c139527c8b85f16c469ffeb982e'
+seq_id: [0,1,2]
+dexrep:
+  sample_method: 'average'
+  sample_num_points: 2048
+  batch_norm_pnfeat: False
+env:
+  env_name: "shadow_hand_grasp"
+  numEnvs: 1
+  envSpacing: 1.5
+  episodeLength: 200 # 250
+  enableDebugVis: False
+  aggregateMode: 1
+
+  random_prior: False
+  random_time: True
+  repose_z: True
+  goal_cond: False
+  grasp_root: '../ShadowHand/v2'
+#  grasp_save_root: '/remote-home/share/datasets/bingheng/DexGraspNet/seq_optdata/grasp_gt_v2/'
+
+  img_save_root: '../vis/img'
+  video_save_root: '../vis/video'
+  img_save: False
+  viewer_video_save: False
+
+  obj_asset_root: "../dataset/meshdata/"
+  table_height: 0.6
+  init_hand_pos_z: 1.0
+  aug_rot_euler: [0.,0.,0.]
+  grasp_data_process: False
+  joint_vel_control: False
+
+
+  stiffnessScale: 1.0
+  forceLimitScale: 1.0
+  useRelativeControl: False
+  dofSpeedScale: 20.0
+  actionsMovingAverage: 1.0
+  controlFrequencyInv: 4 # 60 Hz
+
+  startPositionNoise: 0.0
+  startRotationNoise: 0.0
+
+  resetPositionNoise: 0.0
+  resetRotationNoise: 0.0
+  resetDofPosRandomInterval: 0.0
+  resetDofVelRandomInterval: 0.0
+
+  distRewardScale: 20
+  transition_scale: 0.5
+  orientation_scale: 0.1
+  rotRewardScale: 1.0
+  rotEps: 0.1
+  actionPenaltyScale: -0.0002
+  reachGoalBonus: 250
+  fallDistance: 0.4
+  fallPenalty: 0.0
+
+  objectType: "pot" 
+  observationType: "DexRep"
+  obs_dim:
+    prop: 207 # 211 #propriception
+    dexrep_sensor: 1080
+    dexrep_pnl: 1280
+  handAgentIndex: "[[0, 1, 2, 3, 4, 5]]"
+  asymmetric_observations: False
+  successTolerance: 0.1
+  printNumSuccesses: False
+  maxConsecutiveSuccesses: 0
+
+  clip_observations: 5.0
+  asset:
+    assetRoot: "/remote-home/lihaoming/haoming/isaacgym_grasp/assets"
+    assetFileName: "mjcf/open_ai_assets/hand/shadow_hand.xml"
+    assetFileNameBlock: "urdf/objects/cube_multicolor.urdf"
+    assetFileNameBall: "urdf/objects/ball.urdf"
+    assetFileNameEgg: "mjcf/open_ai_assets/hand/egg.xml"
+    assetFileNamePen: "mjcf/open_ai_assets/hand/pen.xml"
+    assetFileNameObj: "/grab_dexgraspnet/"
+    assetFileNameObj_raw: "/grab_raw_dex_models/"
+
+
+sim:
+  substeps: 2
+  physx:
+    num_threads: 4
+    solver_type: 1  # 0: pgs, 1: tgs
+    num_position_iterations: 8 # 8 bottle
+    num_velocity_iterations: 0
+    contact_offset: 0.002
+    rest_offset: 0.0
+    bounce_threshold_velocity: 0.2
+    max_depenetration_velocity: 1000.0
+    default_buffer_size_multiplier: 5.0
+  flex:
+    num_outer_iterations: 5
+    num_inner_iterations: 20
+    warm_start: 0.8
+    relaxation: 0.75
