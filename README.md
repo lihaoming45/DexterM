@@ -4,7 +4,7 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
 
 | Cube | Camera|Light-Bulb|
 | :---: | :---: |:---: |
-| ![Grasp-Viewer](images/viewer_Rcube.gif)|![Grasp-Viewer](images/viewer_camera.gif)|![GRAB-Teaser](images/mug.gif)|![Grasp-Viewer](images/viewer_lightbulb.gif)|
+| <img src="images/viewer_Rcube.gif" width="60%"> | <img src="images/viewer_camera.gif" width="60%"> | <img src="images/viewer_lightbulb.gif" width="60%"> |
 
 # Download
 To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions. 
