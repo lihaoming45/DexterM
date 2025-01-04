@@ -13,7 +13,7 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
 <div style="display: flex; justify-content: space-between;">
   <img src="images/viewer_video_num16.gif" width="200" height="150" />
   <img src="images/viewer_video_num32.gif" width="200" height="150" />
-  <img src="images/viewer_video_num64.gif" width="200" height="250" />
+  <img src="images/viewer_video_num64.gif" width="200" height="150" />
 </div>
 
 **More visualization can be found in this [page](https://lihaoming45.github.io/DexterM/index.html)!**
