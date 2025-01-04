@@ -9,6 +9,7 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
 | <img src="images/viewer_Rcube.gif" width="100%"> | <img src="images/viewer_camera.gif" width="100%"> | <img src="images/viewer_lightbulb.gif" width="100%"> |
 
 - Visualization of multi-object grasping
+  
 | 视频展示 |
 |----------|
 | [![视频1](https://img.youtube.com/vi/video1/0.jpg)](https://www.youtube.com/watch?v=video1) | [![视频2](https://img.youtube.com/vi/video2/0.jpg)](https://www.youtube.com/watch?v=video2) | [![视频3](https://img.youtube.com/vi/video3/0.jpg)](https://www.youtube.com/watch?v=video3) |
