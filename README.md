@@ -10,9 +10,16 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
 
 - Visualization of multi-object grasping
   
-| 视频展示 |
-|----------|
-| [![视频1](https://img.youtube.com/vi/video1/0.jpg)](https://www.youtube.com/watch?v=video1) | [![视频2](https://img.youtube.com/vi/video2/0.jpg)](https://www.youtube.com/watch?v=video2) | [![视频3](https://img.youtube.com/vi/video3/0.jpg)](https://www.youtube.com/watch?v=video3) |
+<table>
+  <tr>
+    <th colspan="3">视频展示</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/watch?v=video1"><img src="https://img.youtube.com/vi/video1/0.jpg" alt="视频1"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=video2"><img src="https://img.youtube.com/vi/video2/0.jpg" alt="视频2"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=video3"><img src="https://img.youtube.com/vi/video3/0.jpg" alt="视频3"></a></td>
+  </tr>
+</table>
 
 **More visualization can be found in this [page](https://lihaoming45.github.io/DexterM/index.html)!**
 
