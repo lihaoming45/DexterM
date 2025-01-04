@@ -15,9 +15,9 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
     <th colspan="3">视频展示</th>
   </tr>
   <tr>
-    <td><a src="images/viewer_video_num16.mp4" alt="video1"></a></td>
-    <td><a src="images/viewer_video_num36.mp4" alt="video2"></a></td>
-    <td><a src="images/viewer_video_num64.mp4" alt="video3"></a></td>
+    <td><a src="images/viewer_video_num16.gif" alt="video1"></a></td>
+    <td><a src="images/viewer_video_num36.gif" alt="video2"></a></td>
+    <td><a src="images/viewer_video_num64.gif" alt="video3"></a></td>
   </tr>
 </table>
 
