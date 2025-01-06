@@ -1,4 +1,4 @@
-# GraspM<sup>3</sup>: Dexterous Grasp <font color=#00800>M</font>otion Generation at <font color=Red>M</font>illion Scale with Se<font color=Red>m</font>antic Labelling
+# GraspM<sup>3</sup>: Dexterous Grasp <span style="color:red;">M</span>otion Generation at <font color=Red>M</font>illion Scale with Se<font color=Red>m</font>antic Labelling
 The dataset has been released, including the grasping motion sequences of Shadow robot hands and mano hand for more than 8,000 objects. 
 In **Version 1**, we randomly generated 150–200 grasping trajectories per object in arbitrary directions, ensuring collision-free interactions while maintaining natural and smooth hand postures. For each object, approximately 150–200 grasping trajectories were ultimately generated. Subsequently, we leveraged the Isaac Gym simulation environment to augment the data and filter out successful grasping trajectories, leading to the release of **Version 2**. Finally, using a large language model (LLM), we generated semantic annotations for different grasping trajectories based on multi-view rendered images of hand-object interactions, culminating in the release of **Version 3**.
 
