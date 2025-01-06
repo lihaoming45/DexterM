@@ -12,7 +12,7 @@ In **Version 1**, we randomly generated 150–200 grasping trajectories per obje
      | <img src="images/viewer_Rcube.gif" width="100%"> | <img src="images/viewer_camera.gif" width="100%"> | <img src="images/viewer_lightbulb.gif" width="100%"> |
 
 
-**More visualization can be found in this [page](https://lihaoming45.github.io/GraspM/index.html)!**
+**More visualization can be found in this [page](https://lihaoming45.github.io/GraspM3/index.html)!**
 
 # Download
 To download the dataset, please send us an e-mail (haomingli@zju.edu.cn) including contact details (title, full name, organization, and country) and the purpose for downloading the dataset. Important note for students and post-docs: We hope to know your academic supervisor's contact details. By sending the e-mail you accept the following terms and conditions. 
