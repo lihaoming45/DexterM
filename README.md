@@ -3,7 +3,7 @@ The dataset has been released, including the grasping motion sequences of Shadow
 In **Version 1**, we randomly generated 150–200 grasping trajectories per object in arbitrary directions, ensuring collision-free interactions while maintaining natural and smooth hand postures. For each object, approximately 150–200 grasping trajectories were ultimately generated. Subsequently, we leveraged the Isaac Gym simulation environment to augment the data and filter out successful grasping trajectories, leading to the release of **Version 2**. Finally, using a large language model (LLM), we generated semantic annotations for different grasping trajectories based on multi-view rendered images of hand-object interactions, culminating in the release of **Version 3**.
 
 - **Visualization of multi-object grasping**
-  <img src="images/viewer_video_num441_final3_1.gif" width=150%/>
+  <img src="images/viewer_video_num441_final3_1.gif" width=150% />
 
 
 - **Visualization of different grasping trajectories for the same object**
