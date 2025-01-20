@@ -71,7 +71,7 @@ GraspM<sup>3</sup> Dataset
 +-- HumanHand
 |  +-- v1 # The first version of our Released dataset.
 |  |  +-- contactpose_graspseq.zip
-|  |  |  +-- apple **(object name folder)**
+|  |  |  +-- apple (object name folder)
 |  |  |  +-- banana
 |  |  |  |  +-- p0.npy  (stores a grasp trajectory represented by MANO parameters,size=(N_frame,51))
 |  |  |  |  +-- p1.npy
