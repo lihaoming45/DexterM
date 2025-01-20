@@ -54,9 +54,11 @@ When downloading and utilizing the TPNP dataset, you are required to carefully r
 - Our working file structure is as:
 ```bash
 GraspM<sup>3</sup> Dataset
-ObjectMeshes
-+-- meshdata_mano
-+-- meshdata_shadow
++-- ObjectMeshes
+|  +-- contatpose_meshdata.zip
+|  +-- obman_meshdata.zip
+|  +-- grab_meshdata.zip
+|  +-- dexgraspnet_meshdata.zip
 
 +-- ShadowHand
 |  +-- v1 # The first version of our Released dataset.
@@ -65,15 +67,18 @@ ObjectMeshes
 |  |  +-- ...
 |  +-- v2 # The second version of our Released dataset.
 |  +-- v3 # The third version of our Released dataset.
+
 +-- HumanHand
 |  +-- v1 # The first version of our Released dataset.
-|  |  +--source(-category)-code0-scale The filename denotes the object ID of the Obman and The decimal at the end of the file name indicates the scale of the object.
-|  |  +--source(-category)-code1-scale
-|  |  |  +--p0.npy each .npy file store a grasp pose represented by MANO parameters
-|  |  |  +--p1.npy
-|  |  |  +--p2.npy
+|  |  +-- contactpose_graspseq.zip
+|  |  |  +-- apple (object name folder)
+|  |  |  +-- banana
+|  |  |  |  +-- p0.npy  (stores a grasp trajectory represented by MANO parameters,size=(N_frame,51))
+|  |  |  |  +-- p1.npy
+|  |  |  |  +-- ...
 |  |  |  +-- ...
-|  |  +-- ...
+|  |  +-- obman_graspseq.zip
+|  |  +-- grab_graspseq.zip
 
 |  +-- v2 # The second version of our Released dataset.
 |  +-- v3 # The third version of our Released dataset.
