@@ -62,7 +62,7 @@ GraspM<sup>3</sup> Dataset
 
 +-- ShadowHand
 |  +-- v1 # The first version of our Released dataset.
-|  |  +--source(-category)-code0.npy **(The filename denotes the object ID of the ShapeNet)**
+|  |  +--source(-category)-code0.npy (The filename denotes the object ID of the ShapeNet)
 |  |  +--source(-category)-code1.npy
 |  |  +-- ...
 |  +-- v2 # The second version of our Released dataset.
@@ -73,7 +73,7 @@ GraspM<sup>3</sup> Dataset
 |  |  +-- contactpose_graspseq.zip
 |  |  |  +-- apple **(object name folder)**
 |  |  |  +-- banana
-|  |  |  |  +-- p0.npy  **(stores a grasp trajectory represented by MANO parameters,size=(N_frame,51))**
+|  |  |  |  +-- p0.npy  (stores a grasp trajectory represented by MANO parameters,size=(N_frame,51))
 |  |  |  |  +-- p1.npy
 |  |  |  |  +-- ...
 |  |  |  +-- ...
