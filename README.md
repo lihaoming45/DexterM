@@ -105,7 +105,7 @@ Below you can see some generated results from the GraspM<sup>3</sup>:
 ![Grasp Motion](images/TPNPDataset_github.gif)
 
 # Citation
-   This work can be considered a significant extension of our conference paper, Contact2Grasp: 3D grasp synthesis via hand-object contact constraint, published in the Thirty-Second International Joint Conference on Artificial Intelligence (IJCAI '23)
+   This work can be considered a significant extension of our conference paper, Contact2Grasp: 3D grasp synthesis via hand-object contact constraint, and TPGP: Temporal-Parametric Optimization with Deep Grasp Prior for Dexterous Motion Planning,  published in the Thirty-Second International Joint Conference on Artificial Intelligence (IJCAI '23) and the International Conference on Robotics and Automation (ICRA '24).
 ```
 @article{li2023contact2grasp,
   title={Contact2grasp: 3d grasp synthesis via hand-object contact constraint},
@@ -114,5 +114,18 @@ Below you can see some generated results from the GraspM<sup>3</sup>:
   pages={1053--1061},
   year={2023}
 }
+
+@inproceedings{li2024tpgp,
+  title={TPGP: Temporal-Parametric Optimization with Deep Grasp Prior for Dexterous Motion Planning},
+  author={Li, Haoming and Ye, Qi and Huo, Yuchi and Liu, Qingtao and Jiang, Shijian and Zhou, Tao and Li, Xiang and Zhou, Yang and Chen, Jiming},
+  booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={18106--18112},
+  year={2024},
+  organization={IEEE}
+}
 ```
+Please feel free to view the page about our work if you're interested
+- [Contact2Grasp website](https://lihaoming45.github.io/contact2grasp/index.html)
+- [TPGP website](https://lihaoming45.github.io/tpgp.github.io/)
+
 We also kindly ask you to cite Wang et al. [DexGraspNet website](https://pku-epic.github.io/DexGraspNet/), Taheri et al. [GRAB website](https://grab.is.tue.mpg.de/), Hasson et al. [Obman website](https://www.di.ens.fr/willow/research/obman/data/) and Brahmbhatt et al.[ContactPose website](https://github.com/facebookresearch/ContactPose) whose object meshes are used for our TPNP dataset. 
