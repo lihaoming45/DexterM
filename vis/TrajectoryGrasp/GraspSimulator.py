@@ -11,7 +11,7 @@ import numpy as np
 import torch
 import trimesh
 from scipy.spatial.transform import Rotation as R
-from DexRep_Isaac.dexgrasp.utils.rot6d import get_trans_oth6d_according_to_rotmat, joint_names, dexrep_hand,\
+from utils.rot6d import get_trans_oth6d_according_to_rotmat, joint_names, dexrep_hand,\
     fingertips,normalize_vector, cross_product
 from torchvision.io import write_video
 class IsaacGraspSimulator:
