@@ -5,7 +5,7 @@ from psbody.mesh import Mesh as PMesh
 from psbody.mesh.colors import name_to_rgb
 from shadowpth.utils.hand_model import HandModel
 from shadowpth.utils.object_model import ObjectModel
-from shadowpth.utils.vis_utils import sp_animation
+from utils.vis_utils import sp_animation
 
 
 def makepath(desired_path, isfile=True):
